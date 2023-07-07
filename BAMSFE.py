@@ -29,6 +29,7 @@ def BAMSFE(img, supersize_step=5, pca_per_v=0.99, threshold_a=0.01, pca_flag=Tru
     pca_per_v: the number or cumulative percentage for pca projection; if pca_per_v>=1 and isint(pca_per_v) it means the pca transform will save pca_per_v compents; else if pca_per_v<1, it means the cumulative percentage will be used
     threshold_a: the threshold of EV, the smaller of this value it will lead to more scale segmentation
     pca_flag: true or false, true means apply pca transform while false means no pca transform will be applyed.
+    
     ''' 
     if pca_flag:
         img_PCA = performPCA(img, n_components=pca_per_v)
