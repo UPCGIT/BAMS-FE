@@ -4,6 +4,7 @@ function superpixels_value_dstack=BAMSFE_matlab(img, supersize_step, pca_per_v, 
 % pca_per_v: the number or cumulative percentage for pca projection; if pca_per_v>=1 and isint(pca_per_v) it means the pca transform will save pca_per_v compents; else if pca_per_v<1, it means the cumulative percentage will be used
 % threshold_a: the threshold of EV, the smaller of this value it will lead to more scale segmentation
 % pca_flag: true or false, true means apply pca transform while false means no pca transform will be applyed.
+% out:superpixels_value_dstack with shape of rows*cols*featureNumbers
 if pca_flag
     imgPCA=performPCA_matlab(img, pca_per_v);
 else
