@@ -1,4 +1,4 @@
-# Copyright 2011, Ming-Yu Liu
+# Copyright
 
 All Rights Reserved 
 
